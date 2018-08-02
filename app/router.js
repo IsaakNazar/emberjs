@@ -7,6 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('orgs', function() {
+    this.route('facebook');
+    this.route('ember');
+  });
 });
 
 export default Router;
